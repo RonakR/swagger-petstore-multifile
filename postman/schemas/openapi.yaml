@@ -1,4 +1,4 @@
-openapi: "3.0.0"
+openapi: '3.0.0'
 info:
   version: 1.0.0
   title: Swagger Petstore
@@ -15,13 +15,13 @@ tags:
   - name: pets
 paths:
   /pets:
-    $ref: "./resources/pets.yaml"
+    $ref: './shared/resources/pets.yaml'
   /pets/{petId}:
-    $ref: "./resources/pet.yaml"
+    $ref: './shared/resources/pet.yaml'
 components:
   parameters:
-    $ref: "./parameters/_index.yaml"
+    $ref: './parameters/_index.yaml'
   schemas:
-    $ref: "./schemas/_index.yaml"
+    $ref: './schemas/_index.yaml'
   responses:
-    $ref: "./responses/_index.yaml"
+    $ref: './shared/responses/_index.yaml'
